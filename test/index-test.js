@@ -1,7 +1,7 @@
 describe("index.html", function() {
 
     it("displays the correct Titanic info from JSON", () => {
-
+      console.log(document.getElementById('title').innerHTML)
       expect(document.getElementById("title").innerHTML, "Title was not changed on page load").to.equal("Titanic")
       expect(document.getElementById("director").innerHTML, "Director was not changed on page load").to.equal("James Cameron")
       expect(document.getElementById("genre").innerHTML, "Genre was not changed on page load").to.equal("Drama")
